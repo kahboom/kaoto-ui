@@ -11169,10 +11169,10 @@ react-error-boundary@3.1.4:
   dependencies:
     "@babel/runtime" "^7.12.5"
 
-react-flow-renderer@10.3.6:
-  version "10.3.6"
-  resolved "https://registry.yarnpkg.com/react-flow-renderer/-/react-flow-renderer-10.3.6.tgz#9b6a963fdb68f99800207bea835316f3339ed11f"
-  integrity sha512-pHx+QRjfY42o8wCJwgmT5gRDqrLIKq2FM9j0+BmwzUVHK/DglJC0DbAKfoM6MR6Czrz4Y2bdrBFadrwdEg62XA==
+react-flow-renderer@10.3.10:
+  version "10.3.10"
+  resolved "https://registry.yarnpkg.com/react-flow-renderer/-/react-flow-renderer-10.3.10.tgz#9257e129d33e106e91662e087b99eb2e3f66c974"
+  integrity sha512-Qf4YVGPaOwv8xjG/1ouFmZqSeIcu6Os9UT+lHaTP0XQcPetQqnuNQJgfrUA2i3qUXXoDmbUa/fJji7q+haqW+g==
   dependencies:
     "@babel/runtime" "^7.18.0"
     classcat "^5.0.3"
