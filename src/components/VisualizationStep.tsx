@@ -170,7 +170,8 @@ const VisualizationStep = ({ data }: NodeProps<IVizStepNodeData>) => {
             <Handle
               isConnectable={false}
               type="target"
-              position={visualizationStore.layout === 'RIGHT' ? Position.Left : Position.Top}
+              // position={visualizationStore.layout === 'RIGHT' ? Position.Left : Position.Top}
+              position={visualizationStore.layout === 'LR' ? Position.Left : Position.Top}
               id="a"
               style={{ borderRadius: 0 }}
             />
@@ -200,7 +201,8 @@ const VisualizationStep = ({ data }: NodeProps<IVizStepNodeData>) => {
             <Handle
               isConnectable={false}
               type="source"
-              position={visualizationStore.layout === 'RIGHT' ? Position.Right : Position.Bottom}
+              // position={visualizationStore.layout === 'RIGHT' ? Position.Right : Position.Bottom}
+              position={visualizationStore.layout === 'LR' ? Position.Right : Position.Bottom}
               id="b"
               style={{ borderRadius: 0 }}
             />
@@ -300,7 +302,8 @@ const VisualizationStep = ({ data }: NodeProps<IVizStepNodeData>) => {
               <Handle
                 isConnectable={false}
                 type="target"
-                position={visualizationStore.layout === 'RIGHT' ? Position.Left : Position.Top}
+                // position={visualizationStore.layout === 'RIGHT' ? Position.Left : Position.Top}
+                position={visualizationStore.layout === 'LR' ? Position.Left : Position.Top}
                 id="a"
                 style={{ borderRadius: 0 }}
               />
@@ -314,7 +317,8 @@ const VisualizationStep = ({ data }: NodeProps<IVizStepNodeData>) => {
             {/* RIGHT-SIDE HANDLE FOR EDGE TO CONNECT WITH */}
             <Handle
               type="source"
-              position={visualizationStore.layout === 'RIGHT' ? Position.Right : Position.Bottom}
+              // position={visualizationStore.layout === 'RIGHT' ? Position.Right : Position.Bottom}
+              position={visualizationStore.layout === 'LR' ? Position.Right : Position.Bottom}
               id="b"
               style={{ borderRadius: 0 }}
               isConnectable={false}
