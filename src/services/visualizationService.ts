@@ -419,8 +419,10 @@ export class VisualizationService {
     const isHorizontal = direction === 'LR';
 
     dagreGraph.setGraph({
+      edgesep: 50,
+      nodesep: 50,
       rankdir: direction,
-      ranksep: DEFAULT_WIDTH_HEIGHT,
+      ranksep: 80,
     });
 
     nodes.forEach((node) => {
@@ -434,6 +436,7 @@ export class VisualizationService {
       const sourceNode = nodes.find((node) => node.id === edge.source);
 
       dagreGraph.setEdge(edge.source, edge.target, {
+        minlen: sourceNode?.data.step.branches?.length > 1 ? 2 : 1,
         weight: sourceNode?.data.step.branches?.length > 0 ? 2 : 1,
       });
     });
