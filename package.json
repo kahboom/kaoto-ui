@@ -192,5 +192,8 @@
     "dist",
     "src",
     "tsconfig.json"
-  ]
+  ],
+  "msw": {
+    "workerDirectory": "dist"
+  }
 }
